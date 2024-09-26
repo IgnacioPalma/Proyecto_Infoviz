@@ -20,7 +20,7 @@ los datos?
 utilizados en la visualización. Si los datos fueron procesados, describe brevemente cómo lo
 hiciste.**
 
-Maira: Los datos utilizados provienen de la API de Spotify, aunque fueron obtenidos y procesados por un usuario en Kaggle. Este conjunto incluye información sobre las canciones más populares en 73 países. Para nuestra visualización, decidimos enfocarnos en el atributo "Valence", el cual es un porcentaje que indica cuán alegre es una canción. Durante el procesamiento, limpiamos datos erróneos, eliminando aquellos sin nombre, sin ID o sin país. Posteriormente, almacenamos las columnas necesarias: "valence", "spotify_id", "country" y "name", en un nuevo archivo CSV. Todo este proceso fue realizado utilizando la librería pandas de Python.
+Maira: Los datos utilizados provienen de la API de Spotify, aunque fueron obtenidos y procesados por un usuario en Kaggle. Este conjunto incluye información sobre las canciones más populares en 73 países. Para nuestra visualización, decidimos enfocarnos en el atributo "Valence", el cual es un porcentaje que indica cuán alegre es una canción. Durante el procesamiento, limpiamos datos erróneos, eliminando aquellos sin nombre, sin ID o sin país. También se redujo la cantidad de datos a 5000 canciónes por país, así nos aseguramos de tener la misma cantidad de datos para cada país. Posteriormente, almacenamos las columnas necesarias: "valence", "spotify_id", "country" y "name", en un nuevo archivo CSV. Todo este proceso fue realizado utilizando la librería pandas de Python.
 
 - Razonamiento Detrás de la Visualización (máximo 10 líneas): Describe el razonamiento
 detrás del diseño de la visualización. ¿Por qué elegiste este tipo de gráfico o visualización?
