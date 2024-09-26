@@ -60,7 +60,7 @@ clase 8 (resaltar puntos, jerarquías, fuente, menos es más, etc).
 manera en que lo haces (la visualización en sí) tenga sentido, revisando la clase 2 y
 clase 3.
 
-● Asegúrate de que el resultado visual esté alineado en general (ver imagen abajo).
+● Asegúrate de que el resultado visual esté alineado en general.
 
 
 
