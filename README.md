@@ -48,13 +48,17 @@ Checklist para la Entrega
 
 ● `Revisión de Clases:` Revisa también la clase 7 para indicaciones sobre el proceso de
 diseño y tipos de visualizaciones para preguntas diferentes.
+
 ● `Errores Comunes:` Verifica que no haya errores comunes no justificados discutidos en
 las clases 4 y 5.
+
 ● `Principios de Diseño:` Confirma que se han aplicado los principios discutidos en la
 clase 8 (resaltar puntos, jerarquías, fuente, menos es más, etc).
+
 ● `Coherencia de la Comunicación:` Asegúrate de que lo que deseas comunicar y la
 manera en que lo haces (la visualización en sí) tenga sentido, revisando la clase 2 y
 clase 3.
+
 ● Asegúrate de que el resultado visual esté alineado en general (ver imagen abajo).
 
 
