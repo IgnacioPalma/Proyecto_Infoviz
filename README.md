@@ -43,7 +43,8 @@ comentarios obtenidos? Si no realizaste cambios, explica por qué.
 
 
 ## Recomendaciónes del profesor:
-Checklist para la Entrega
+### Checklist para la Entrega
+
 ● `Ciclo de Diseño:` Asegúrate de utilizar el ciclo de diseño mencionado en la clase 6.
 
 ● `Revisión de Clases:` Revisa también la clase 7 para indicaciones sobre el proceso de
