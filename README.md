@@ -9,14 +9,18 @@
 por mientras pondré las cosas que hay que hacer, avanzando con ideas, de todas formas creo que esto se entrega por canvas:
 ## Por Hacer 
 
-### 1. Diseño (30%)
+### 1. Diseño (3%)
+IMPORTANTE JEJE: estoy poniendo ideas de respuestas para avanzar.
+
 -  Mensaje Principal (máximo 10 líneas): Identifica claramente cuál es el mensaje principal que
 deseas comunicar con la visualización. ¿Qué historia o análisis estás presentando a través de
 los datos?
 
-- Origen y Procesamiento de Datos (máximo 6 líneas): Explica de dónde provienen los datos
+- **Origen y Procesamiento de Datos (máximo 6 líneas): Explica de dónde provienen los datos
 utilizados en la visualización. Si los datos fueron procesados, describe brevemente cómo lo
-hiciste.
+hiciste.**
+
+Maira: Los datos utilizados provienen de la API de Spotify, aunque fueron obtenidos y procesados por un usuario en Kaggle. Este conjunto incluye información sobre las canciones más populares en 73 países. Para nuestra visualización, decidimos enfocarnos en el atributo "Valence", el cual es un porcentaje que indica cuán alegre es una canción. Durante el procesamiento, limpiamos datos erróneos, eliminando aquellos sin nombre, sin ID o sin país. Posteriormente, almacenamos las columnas necesarias: "valence", "spotify_id", "country" y "name", en un nuevo archivo CSV. Todo este proceso fue realizado utilizando la librería pandas de Python.
 
 - Razonamiento Detrás de la Visualización (máximo 10 líneas): Describe el razonamiento
 detrás del diseño de la visualización. ¿Por qué elegiste este tipo de gráfico o visualización?
