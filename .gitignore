@@ -1,0 +1,7 @@
+# Ignorar archivos de configuración de sistema operativo
+.DS_Store
+# Ignorar archivos compilados de Python
+__pycache__/
+*.py[cod]
+# Ignorar todos datos
+universal_top_spotify_songs.csv
