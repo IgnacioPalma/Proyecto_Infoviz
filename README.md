@@ -14,7 +14,9 @@ IMPORTANTE JEJE: estoy poniendo ideas de respuestas para avanzar.
 
 -  Mensaje Principal (máximo 10 líneas): Identifica claramente cuál es el mensaje principal que
 deseas comunicar con la visualización. ¿Qué historia o análisis estás presentando a través de
-los datos?
+los datos? (igual exagere un poco JWSWJJ poniendole color)
+
+El objetivo de la visualización es destacar que los países latinoamericanos tienden a preferir canciones con un tono más alegre (en spotify) en comparación con el resto del mundo. Esta diferencia puede estar reflejando un aspecto cultural interesante, pues a pesar de los desafíos socioeconómicos que enfrenta la región, la música alegre sigue siendo una expresión fuerte de la identidad latinoamericana. Queremos mostrar que esta alegría, presente en la música popular, es una manifestación (en cierta parte), de la cultura y el espíritu de la región.
 
 - **Origen y Procesamiento de Datos (máximo 6 líneas): Explica de dónde provienen los datos
 utilizados en la visualización. Si los datos fueron procesados, describe brevemente cómo lo
@@ -22,9 +24,9 @@ hiciste.**
 
 Maira: Los datos utilizados provienen de la API de Spotify, aunque fueron obtenidos y procesados por un usuario en Kaggle. Este conjunto incluye información sobre las canciones más populares en 73 países. Para nuestra visualización, decidimos enfocarnos en el atributo "Valence", el cual es un porcentaje que indica cuán alegre es una canción. Durante el procesamiento, limpiamos datos erróneos, eliminando aquellos sin nombre, sin ID o sin país. También se redujo la cantidad de datos a 5000 canciónes por país, así nos aseguramos de tener la misma cantidad de datos para cada país. Posteriormente, almacenamos las columnas necesarias: "valence", "spotify_id", "country" y "name", en un nuevo archivo CSV. Todo este proceso fue realizado utilizando la librería pandas de Python. Falta por: Decidir como tratar datos duplicados
 
-- Razonamiento Detrás de la Visualización (máximo 10 líneas): Describe el razonamiento
+- **Razonamiento Detrás de la Visualización (máximo 10 líneas): Describe el razonamiento
 detrás del diseño de la visualización. ¿Por qué elegiste este tipo de gráfico o visualización?
-¿Cómo crees que este formato ayuda a transmitir el mensaje de manera efectiva?
+¿Cómo crees que este formato ayuda a transmitir el mensaje de manera efectiva?** (por mejorar redacción)
 
 Nos basamos en la naturaleza de los datos: estamos representando datos nominales (países) en el eje X con una escala ordinal, y datos cuantitativos (promedio de valence) en el eje Y. Un gráfico de barras es una buena opción para representar este tipo de información, permite una comparación clara entre cada país. Una de las principales ventajas de este tipo de  gráfico es que la longitud de las barras ofrece una señal visual clara que facilita la identificación rápida de los países con los promedios de valence más altos. En este caso se observa cómo los  países de latinoamerica se agrupan hacia la izquierda del gráfico, lo que refuerza visualmente nuestra historia.
 Además, el uso de un color para destacar a los países latinoamericanos añade un elemento adicional, ayudando a resaltar visualmente los valores de valence de los países de latinoamericanos. 
