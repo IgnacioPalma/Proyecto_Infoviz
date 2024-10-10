@@ -26,6 +26,9 @@ Maira: Los datos utilizados provienen de la API de Spotify, aunque fueron obteni
 detrás del diseño de la visualización. ¿Por qué elegiste este tipo de gráfico o visualización?
 ¿Cómo crees que este formato ayuda a transmitir el mensaje de manera efectiva?
 
+Nos basamos en la naturaleza de los datos: estamos representando datos nominales (países) en el eje X con una escala ordinal, y datos cuantitativos (promedio de valence) en el eje Y. Un gráfico de barras es una buena opción para representar este tipo de información, permite una comparación clara entre cada país. Una de las principales ventajas de este tipo de  gráfico es que la longitud de las barras ofrece una señal visual clara que facilita la identificación rápida de los países con los promedios de valence más altos. En este caso se observa cómo los  países de latinoamerica se agrupan hacia la izquierda del gráfico, lo que refuerza visualmente nuestra historia.
+Además, el uso de un color para destacar a los países latinoamericanos añade un elemento adicional, ayudando a resaltar visualmente los valores de valence de los países de latinoamericanos. 
+El gráfico de barras es una herramienta que permite una  precisión visual y permite ver lo datos de forma clara y sin distracciones. 
 
 ### Implementación (50%)
 - Enlace a la Visualización: Proporciona un enlace a la página web donde se puede visualizar
