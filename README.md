@@ -12,9 +12,9 @@ por mientras pondré las cosas que hay que hacer, avanzando con ideas, de todas 
 ### 1. Diseño (3%)
 IMPORTANTE JEJE: estoy poniendo ideas de respuestas para avanzar.
 
--  Mensaje Principal (máximo 10 líneas): Identifica claramente cuál es el mensaje principal que
+**-  Mensaje Principal (máximo 10 líneas): Identifica claramente cuál es el mensaje principal que
 deseas comunicar con la visualización. ¿Qué historia o análisis estás presentando a través de
-los datos? (igual exagere un poco JWSWJJ poniendole color)
+los datos?** (igual exagere un poco JWSWJJ poniendole color)
 
 El objetivo de la visualización es destacar que los países latinoamericanos tienden a preferir canciones con un tono más alegre (en spotify) en comparación con el resto del mundo. Esta diferencia puede estar reflejando un aspecto cultural interesante, pues a pesar de los desafíos socioeconómicos que enfrenta la región, la música alegre sigue siendo una expresión fuerte de la identidad latinoamericana. Queremos mostrar que esta alegría, presente en la música popular, es una manifestación (en cierta parte), de la cultura y el espíritu de la región.
 
@@ -22,7 +22,7 @@ El objetivo de la visualización es destacar que los países latinoamericanos ti
 utilizados en la visualización. Si los datos fueron procesados, describe brevemente cómo lo
 hiciste.**
 
-Maira: Los datos utilizados provienen de la API de Spotify, aunque fueron obtenidos y procesados por un usuario en Kaggle. Este conjunto incluye información sobre las canciones más populares en 73 países. Para nuestra visualización, decidimos enfocarnos en el atributo "Valence", el cual es un porcentaje que indica cuán alegre es una canción. Durante el procesamiento, limpiamos datos erróneos, eliminando aquellos sin nombre, sin ID o sin país. También se redujo la cantidad de datos a 5000 canciónes por país, así nos aseguramos de tener la misma cantidad de datos para cada país. Posteriormente, almacenamos las columnas necesarias: "valence", "spotify_id", "country" y "name", en un nuevo archivo CSV. Todo este proceso fue realizado utilizando la librería pandas de Python. Falta por: Decidir como tratar datos duplicados
+Los datos utilizados provienen de la API de Spotify, aunque fueron obtenidos y procesados por un usuario en Kaggle. Este conjunto incluye información sobre las canciones más populares en 73 países. Para nuestra visualización, decidimos enfocarnos en el atributo "Valence", el cual es un porcentaje que indica cuán alegre es una canción. Durante el procesamiento, limpiamos datos erróneos, eliminando aquellos sin nombre, sin ID o sin país. También se redujo la cantidad de datos al top 50 de canciónes más populares en los primeros días de cada mes por país, así nos aseguramos de tener la misma cantidad de datos para cada país. Posteriormente, calculamos los promedios de valence para cada país y lo almacenamos en un en un nuevo archivo CSV. Todo este proceso fue realizado utilizando la librería pandas de Python.
 
 - **Razonamiento Detrás de la Visualización (máximo 10 líneas): Describe el razonamiento
 detrás del diseño de la visualización. ¿Por qué elegiste este tipo de gráfico o visualización?
@@ -50,26 +50,6 @@ aloud). ¿Qué tipo de comentarios recibiste durante esta evaluación?
 cómo afectó el producto final. ¿Realizaste modificaciones en la visualización basadas en los
 comentarios obtenidos? Si no realizaste cambios, explica por qué.
 
-
-## Recomendaciónes del profesor:
-### Checklist para la Entrega
-
-● `Ciclo de Diseño:` Asegúrate de utilizar el ciclo de diseño mencionado en la clase 6.
-
-● `Revisión de Clases:` Revisa también la clase 7 para indicaciones sobre el proceso de
-diseño y tipos de visualizaciones para preguntas diferentes.
-
-● `Errores Comunes:` Verifica que no haya errores comunes no justificados discutidos en
-las clases 4 y 5.
-
-● `Principios de Diseño:` Confirma que se han aplicado los principios discutidos en la
-clase 8 (resaltar puntos, jerarquías, fuente, menos es más, etc).
-
-● `Coherencia de la Comunicación:` Asegúrate de que lo que deseas comunicar y la
-manera en que lo haces (la visualización en sí) tenga sentido, revisando la clase 2 y
-clase 3.
-
-● Asegúrate de que el resultado visual esté alineado en general.
 
 
 
