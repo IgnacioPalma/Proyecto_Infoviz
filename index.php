@@ -1,12 +1,15 @@
 <?php
-    require "/src/includes/header.php"
+    require __DIR__."/src/includes/header.php";
 ?>
 
-    <h1>Hello World!</h1>
-    <div id="bar-chart"></div>
-    <script src="script.js"></script>
+    <div class="container">
+        <h1>Hello</h1>
+        <div id="bar-chart"></div>
+        <script src="/src/script.js"></script>
+
+    </div>
 
 <?php
-    require "/src/includes/footer.php"
+    require __DIR__."/src/includes/footer.php";
 ?>
     
