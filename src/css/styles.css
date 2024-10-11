@@ -1,12 +1,14 @@
+
 body {
     background-color: #FF4330;
 }
 
 h1 {
     font-family: 'Instrument Sans';
-    color: #CFF0D1;
+    color: #CFF0D1 !important;
 }
 
-svg {
-    fill: #CFF0D1;
+.instrument-font {
+    font-family: 'Instrument Sans';
+    color: #CFF0D1 !important;
 }

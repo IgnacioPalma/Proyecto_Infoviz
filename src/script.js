@@ -7,7 +7,7 @@ d3.csv("data/mean_valence_by_country_2024.csv").then(function(data) {
     }));
 
     // Sort the combined data by valence (greatest to least)
-    combinedData.sort((a, b) => b.valence - a.valence);
+    combinedData.sort((a, b) => a.valence - b.valence);
 
     // Extract sorted arrays
     const countries = combinedData.map(item => item.country);
@@ -16,12 +16,12 @@ d3.csv("data/mean_valence_by_country_2024.csv").then(function(data) {
 
     // Define a color map for continents
     const continentColors = {
-        'AF': 'CFF0D1',
-        'AS': 'CFF0D1',
-        'EU': 'CFF0D1',
-        'NA': 'black',
-        'SA': 'black',
-        'OC': 'CFF0D1'
+        'AF': '#CFF0D1',
+        'AS': '#CFF0D1',
+        'EU': '#CFF0D1',
+        'NA': '#000000',
+        'SA': '#000000',
+        'OC': '#CFF0D1'
     };
 
     // Map each continent to its corresponding color
@@ -29,16 +29,17 @@ d3.csv("data/mean_valence_by_country_2024.csv").then(function(data) {
 
     // Create the trace for the bar chart
     const trace = {
-        x: countries,
-        y: valences,
+        x: valences,
+        y: countries,
         type: 'bar',
+        orientation: 'h',
         marker: {
             color: colors
         }
     };
 
     // Calculate initial dimensions
-    const aspectRatio = 1000 / 1000; // height / width from original layout
+    const aspectRatio = 1600 / 1000; // height / width from original layout
     
     // Function to get updated layout
     function getUpdatedLayout() {
