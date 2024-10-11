@@ -1,7 +1,8 @@
-d3.csv("data/mean_valence_by_country_2024.csv").then(function(data) {
+d3.csv("data/output.csv").then(function(data) {
     // Create an array of objects to keep country, valence, and continent together when sorting
     const combinedData = data.map(row => ({
         country: row.country,
+        country_name: row.country_name,
         valence: parseFloat(row.valence),
         continent: row.continent
     }));
@@ -33,6 +34,8 @@ d3.csv("data/mean_valence_by_country_2024.csv").then(function(data) {
         y: countries,
         type: 'bar',
         orientation: 'h',
+        text: combinedData.map(item => item.country_name), // Add this line
+        hoverinfo: 'text', // Add this line
         marker: {
             color: colors
         }
