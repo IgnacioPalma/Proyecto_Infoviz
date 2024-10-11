@@ -1,3 +1,12 @@
+body {
+    background-color: #FF4330;
+}
+
 h1 {
-    font-family: Instrument Sans;
+    font-family: 'Instrument Sans';
+    color: #CFF0D1;
+}
+
+svg {
+    fill: #CFF0D1;
 }
