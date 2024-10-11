@@ -19,9 +19,10 @@ d3.csv("data/mean_valence_by_country_2024.csv").then(function(data) {
 
     // Create the trace for the bar chart
     const trace = {
-        x: countries,
-        y: valences,
+        x: valences, // Swap x and y
+        y: countries, // Swap x and y
         type: 'bar',
+        orientation: 'h', // Add orientation
         marker: {
             color: colors
         }
@@ -36,9 +37,4 @@ d3.csv("data/mean_valence_by_country_2024.csv").then(function(data) {
 
     // Plot the chart
     Plotly.newPlot('bar-chart', [trace], layout);
-
-    // Add event listener to the download button
-    document.getElementById('download-svg').addEventListener('click', function() {
-        Plotly.downloadImage('bar-chart', {format: 'svg', filename: 'bar_chart'});
-    });
 });
