@@ -8,7 +8,7 @@ d3.csv("data/output.csv").then(function(data) {
     }));
 
     // Sort the combined data by valence (greatest to least)
-    combinedData.sort((a, b) => a.valence - b.valence);
+    combinedData.sort((a, b) => b.valence - a.valence);
 
     // Extract sorted arrays
     const countries = combinedData.map(item => item.country);
@@ -30,38 +30,50 @@ d3.csv("data/output.csv").then(function(data) {
 
     // Create the trace for the bar chart
     const trace = {
-        x: valences,
-        y: countries,
+        x: countries,
+        y: valences,
+        orientation: 'v',
         type: 'bar',
-        orientation: 'h',
-        text: combinedData.map(item => item.country_name), // Add this line
-        hoverinfo: 'text', // Add this line
+        text: combinedData.map(item => item.country_name),
+        hoverinfo: 'text',
         marker: {
             color: colors
         }
     };
 
     // Calculate initial dimensions
-    const aspectRatio = 1600 / 1000; // height / width from original layout
+    const aspectRatio = 700 / 1200; // height / width from original layout
     
     // Function to get updated layout
     function getUpdatedLayout() {
         const windowWidth = window.innerWidth;
         // Use 90% of window width as plot width, with a maximum of 1100px
-        const newWidth = Math.min(windowWidth * 0.9, 1100);
+        const newWidth = Math.min(windowWidth * 0.85, 1050);
         const newHeight = newWidth * aspectRatio;
 
         return {
             xaxis: { title: 'Country' },
-            yaxis: { title: 'Valence' },
+            yaxis: { title: 'Valence (aka. happiness of the song)' },
             paper_bgcolor: "rgba(0,0,0,0)",
             plot_bgcolor: "rgba(0,0,0,0)",
             width: newWidth,
             height: newHeight,
+            margin: {
+                t: 20
+            },
             font: {
                 family: 'Instrument Sans',
                 size: 18,
                 color: '#CFF0D1'
+            },
+            showlegend: true,
+            legend: {
+                items: [{
+                    name: 'LATAM Countries',
+                    marker: {
+                        color: '000000'
+                    }
+                }]
             }
         };
     }

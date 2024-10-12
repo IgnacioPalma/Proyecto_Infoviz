@@ -5,8 +5,16 @@ body {
 
 h1 {
     font-family: 'Instrument Sans';
+    font-weight: 700;
     color: #CFF0D1 !important;
 }
+
+h3 {
+    font-family: 'Instrument Sans';
+    font-weight: 500;
+    color: #CFF0D1 !important;
+}
+
 
 .instrument-font {
     font-family: 'Instrument Sans';
