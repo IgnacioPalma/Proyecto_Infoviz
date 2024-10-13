@@ -9,7 +9,7 @@ h1 {
     color: #CFF0D1 !important;
 }
 
-h3 {
+h3, a {
     font-family: 'Instrument Sans';
     font-weight: 500;
     color: #CFF0D1 !important;
