@@ -7,7 +7,7 @@ d3.csv("data/output.csv").then(function(data) {
       continent: row.continent
     }));
   
-    // Sort the combined data by valence (greatest to least)
+    // Sort the combined data by valence (greatest to least) // Deprecated
     combinedData.sort((a, b) => b.valence - a.valence);
   
     // Extract sorted arrays
@@ -91,7 +91,7 @@ d3.csv("data/output.csv").then(function(data) {
     // Plot the chart with initial layout
     Plotly.newPlot('bar-chart', [latamTrace, otherTrace], getUpdatedLayout(), config);
   
-    // Add event listener for window resize
+    // Add event listener for window resize // #1: Maybe we could add support to mobile?
     window.addEventListener('resize', () => {
       // Debounce the resize event
       clearTimeout(window.resizeTimeout);
