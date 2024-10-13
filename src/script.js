@@ -56,7 +56,7 @@ d3.csv("data/output.csv").then(function(data) {
       const newSize = aspectRatio * 10;
   
       return {
-        xaxis: { title: 'Average Hapinness of the Songs Streamed as of 2024'},
+        xaxis: { title: 'Average Happinness of the Songs Streamed as of 2024'},
         yaxis: { title: 'Country', categoryorder: 'total ascending'},
         paper_bgcolor: "rgba(0,0,0,0)",
         plot_bgcolor: "rgba(0,0,0,0)",
