@@ -25,7 +25,9 @@ d3.csv("data/output.csv").then(function(data) {
       text: combinedData.filter(item => ['NA', 'SA'].includes(item.continent)).map(item => item.country_name),
       hoverinfo: 'text',
       marker: {
-        color: '#000000'
+        color: countries.filter((_, i) => ['NA', 'SA'].includes(continents[i])).map(country => 
+          (country === 'CA' || country === 'US') ? '#CFF0D1' : '#000000'
+        )
       }
     };
   
