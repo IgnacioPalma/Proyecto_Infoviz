@@ -57,7 +57,7 @@ d3.csv("data/output.csv").then(function(data) {
   
       return {
         xaxis: { title: 'Average Happinness of the Songs Streamed as of 2024'},
-        yaxis: { title: 'Country', categoryorder: 'total ascending'},
+        yaxis: { title: 'Countries', categoryorder: 'total ascending'},
         paper_bgcolor: "rgba(0,0,0,0)",
         plot_bgcolor: "rgba(0,0,0,0)",
         width: newWidth,
