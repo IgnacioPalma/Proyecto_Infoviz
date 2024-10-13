@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latin America Happiness Report</title>
+</head>
+<body>
+    <div id="header"></div>
+
+    <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-12 text-right">
+                <h1>Latin America is the most happy region as of 2024 according to Spotify*</h1>
+                <h3>As of 2024, 7 LATAM countries occupy the top 10 of countries that, on average, streams songs with the highest mean valence (aka. happiness of the song)</h3>
+            </div>
+            <div class="col-12 d-flex justify-content-between">
+                <div id="bar-chart" class="flex-grow-2"></div>
+                <script src="/src/script.js"></script>
+            </div>
+            <a>[*]: Taking the mean valence of the Top 50 most streamed songs by country during the first day of all months as of 2024.</a>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+        
+    <script>
+        // Load header and footer
+        fetch('/src/includes/header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+
+        fetch('/src/includes/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+    </script>
+</body>
+</html>
