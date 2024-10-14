@@ -38,20 +38,21 @@ tu trabajo, utilizando plataformas de hosting para sitios web estáticos como Gi
 otras plataformas adecuadas que permitan acceder a la visualización mediante un enlace.
 
 ### Evaluación (10%)
-- Público Evaluador (máximo 2 líneas): Especifica a quiénes mostraste la visualización para
-evaluación (amigos, compañeros de clase, usuarios potenciales).
+**- Público Evaluador (máximo 2 líneas): Especifica a quiénes mostraste la visualización para
+evaluación (amigos, compañeros de clase, usuarios potenciales).**
+
 El público evaluador estuvo compuesto por compañeros de universidad que no han tomado el curso, familiares y amigos
 
-- Proceso de Evaluación (máximo 15 líneas): Describe el procedimiento que seguiste para
+**Proceso de Evaluación (máximo 15 líneas): Describe el procedimiento que seguiste para
 evaluar la efectividad de la visualización utilizando la técnica de pensar en voz alta (thinking
-aloud). ¿Qué tipo de comentarios recibiste durante esta evaluación?
+aloud). ¿Qué tipo de comentarios recibiste durante esta evaluación?**
 
 El proceso de evaluación comenzó con la creación de borradores y un análisis exploratorio de los datos, donde nos planteamos preguntas clave como: "¿Qué datos tenemos?" y "¿Lo que observamos tiene sentido?". Inicialmente, exploramos varios conjuntos de datos que ofrecían diferentes perspectivas, pero finalmente seleccionamos uno que tuviese un enfoque en los países y el atributo "Valence". Utilizamos bibliotecas como Pandas y Matplotlib en Python para visualizar los datos y, en el proceso, nos dimos cuenta de que nuestra hipótesis inicial sobre la relación entre estados emocionales musicales y condiciones socioeconómicas no se sostenía. Esto nos llevó a replantear la narrativa, explorando distintas ideas y reformulando la pregunta ¿Qué queremos mostrar? En cuanto a la visualización, y la pregunta: ¿Qué tipo de visualización usar? Estabamos entre una visualización geoespacial o un gráfico de barras para representar los promedios de valence, y finalmente optamos por este último, por los motivos mencionados en la pregunta anterior. Durante la evaluación por terceros, recibimos comentarios sobre la falta de claridad en las barras, lo que dificultaba identificar qué países representaban Latinoamérica y cuales no. Además, se mencionó una sobrecarga de información en el gráfico por la cantidad de países escogidos.
 
 ### Mejoramiento (10%)
-- Aplicación de Retroalimentación (máximo 6 líneas): Discute la retroalimentación recibida y
+**Aplicación de Retroalimentación (máximo 6 líneas): Discute la retroalimentación recibida y
 cómo afectó el producto final. ¿Realizaste modificaciones en la visualización basadas en los
-comentarios obtenidos? Si no realizaste cambios, explica por qué.
+comentarios obtenidos? Si no realizaste cambios, explica por qué.** 
 
 Realizamos modificaciones basadas en los comentarios recibidos. Para abordar la sobrecarga de información, rotamos los ejes de la visualización, permitiendo al usuario procesar la información más lentamente. Decidimos no eliminar países, ya que consideramos que eso afectaría la narrativa que queríamos transmitir. En cuanto a la claridad sobre los países de Latinoamérica, añadimos un cuadro explicativo para mejorar la comprensión. También ajustamos los labels y descripciones de la visualización hasta que fueran lo más claros posibles, en base a los comentarios recibidos sobre la claridad del atributo "valence", por ejemplo. Tras implementar estos cambios, el público evaluador interpretó correctamente la historia que queríamos contar y recibimos comentarios positivos.
 
